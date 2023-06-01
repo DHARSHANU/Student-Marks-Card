@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>WELCOME TEACHER SIGNUP PAGE</h1>
+      <form action="signupteacher" method="post">
+        <label>Name</label>
+        <input type="text" placeholder="Enter ur Name" name="first"  required="required"/>
+        <br>        
+        <label>Email</label>
+        <input type="email" placeholder="Enter ur Email" name="email" required="required"/>
+        <br>
+
+        <label>subject</label>
+        <select name="subject" required="required">
+						<option>Select your Subject</option>
+						<option>Mathematics</option>
+						<option>Science</option>
+						<option>English</option>
+						<option>Kannada</option>
+						<option>Hindi</option>
+						<option>Social Science</option>
+				</select>
+        <br>
+		<label>Mobile </label>
+        <input type="tel" placeholder="Enter ur Mobile Number" name="mobile" required="required" pattern="{0-9}[10]" maxlength="10"/>
+        <br>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter ur Password" name="psw" required="required" maxlength="10"/>
+         <br>
+         <br>
+         <input type="reset" value="cancel"/>
+        <input type="submit" value="Submit"/>
+      </form>
+</body>
+</html>
